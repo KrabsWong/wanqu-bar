@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		580C0B831D49F8AE00864F2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0B821D49F8AE00864F2F /* AppDelegate.swift */; };
+		580C0B851D49F8AE00864F2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 580C0B841D49F8AE00864F2F /* Assets.xcassets */; };
+		580C0B881D49F8AE00864F2F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 580C0B861D49F8AE00864F2F /* MainMenu.xib */; };
+		580C0B931D49F8AE00864F2F /* WanquBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0B921D49F8AE00864F2F /* WanquBarTests.swift */; };
+		580C0B9E1D49F8AE00864F2F /* WanquBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0B9D1D49F8AE00864F2F /* WanquBarUITests.swift */; };
+		580C0BAD1D4A080900864F2F /* WanquViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0BAB1D4A080900864F2F /* WanquViewController.swift */; };
+		580C0BAE1D4A080900864F2F /* WanquViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 580C0BAC1D4A080900864F2F /* WanquViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		580C0B8F1D49F8AE00864F2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 580C0B771D49F8AD00864F2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 580C0B7E1D49F8AE00864F2F;
+			remoteInfo = WanquBar;
+		};
+		580C0B9A1D49F8AE00864F2F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 580C0B771D49F8AD00864F2F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 580C0B7E1D49F8AE00864F2F;
+			remoteInfo = WanquBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		580C0B7F1D49F8AE00864F2F /* WanquBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WanquBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		580C0B821D49F8AE00864F2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		580C0B841D49F8AE00864F2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		580C0B871D49F8AE00864F2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		580C0B891D49F8AE00864F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		580C0B8E1D49F8AE00864F2F /* WanquBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WanquBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		580C0B921D49F8AE00864F2F /* WanquBarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanquBarTests.swift; sourceTree = "<group>"; };
+		580C0B941D49F8AE00864F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		580C0B991D49F8AE00864F2F /* WanquBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WanquBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		580C0B9D1D49F8AE00864F2F /* WanquBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanquBarUITests.swift; sourceTree = "<group>"; };
+		580C0B9F1D49F8AE00864F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		580C0BAB1D4A080900864F2F /* WanquViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WanquViewController.swift; sourceTree = "<group>"; };
+		580C0BAC1D4A080900864F2F /* WanquViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WanquViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		580C0B7C1D49F8AE00864F2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		580C0B8B1D49F8AE00864F2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		580C0B961D49F8AE00864F2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		580C0B761D49F8AD00864F2F = {
+			isa = PBXGroup;
+			children = (
+				580C0B811D49F8AE00864F2F /* WanquBar */,
+				580C0B911D49F8AE00864F2F /* WanquBarTests */,
+				580C0B9C1D49F8AE00864F2F /* WanquBarUITests */,
+				580C0B801D49F8AE00864F2F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		580C0B801D49F8AE00864F2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				580C0B7F1D49F8AE00864F2F /* WanquBar.app */,
+				580C0B8E1D49F8AE00864F2F /* WanquBarTests.xctest */,
+				580C0B991D49F8AE00864F2F /* WanquBarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		580C0B811D49F8AE00864F2F /* WanquBar */ = {
+			isa = PBXGroup;
+			children = (
+				580C0B821D49F8AE00864F2F /* AppDelegate.swift */,
+				580C0B841D49F8AE00864F2F /* Assets.xcassets */,
+				580C0B861D49F8AE00864F2F /* MainMenu.xib */,
+				580C0BAB1D4A080900864F2F /* WanquViewController.swift */,
+				580C0BAC1D4A080900864F2F /* WanquViewController.xib */,
+				580C0B891D49F8AE00864F2F /* Info.plist */,
+			);
+			path = WanquBar;
+			sourceTree = "<group>";
+		};
+		580C0B911D49F8AE00864F2F /* WanquBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				580C0B921D49F8AE00864F2F /* WanquBarTests.swift */,
+				580C0B941D49F8AE00864F2F /* Info.plist */,
+			);
+			path = WanquBarTests;
+			sourceTree = "<group>";
+		};
+		580C0B9C1D49F8AE00864F2F /* WanquBarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				580C0B9D1D49F8AE00864F2F /* WanquBarUITests.swift */,
+				580C0B9F1D49F8AE00864F2F /* Info.plist */,
+			);
+			path = WanquBarUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		580C0B7E1D49F8AE00864F2F /* WanquBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 580C0BA21D49F8AE00864F2F /* Build configuration list for PBXNativeTarget "WanquBar" */;
+			buildPhases = (
+				580C0B7B1D49F8AE00864F2F /* Sources */,
+				580C0B7C1D49F8AE00864F2F /* Frameworks */,
+				580C0B7D1D49F8AE00864F2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WanquBar;
+			productName = WanquBar;
+			productReference = 580C0B7F1D49F8AE00864F2F /* WanquBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		580C0B8D1D49F8AE00864F2F /* WanquBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 580C0BA51D49F8AE00864F2F /* Build configuration list for PBXNativeTarget "WanquBarTests" */;
+			buildPhases = (
+				580C0B8A1D49F8AE00864F2F /* Sources */,
+				580C0B8B1D49F8AE00864F2F /* Frameworks */,
+				580C0B8C1D49F8AE00864F2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				580C0B901D49F8AE00864F2F /* PBXTargetDependency */,
+			);
+			name = WanquBarTests;
+			productName = WanquBarTests;
+			productReference = 580C0B8E1D49F8AE00864F2F /* WanquBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		580C0B981D49F8AE00864F2F /* WanquBarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 580C0BA81D49F8AE00864F2F /* Build configuration list for PBXNativeTarget "WanquBarUITests" */;
+			buildPhases = (
+				580C0B951D49F8AE00864F2F /* Sources */,
+				580C0B961D49F8AE00864F2F /* Frameworks */,
+				580C0B971D49F8AE00864F2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				580C0B9B1D49F8AE00864F2F /* PBXTargetDependency */,
+			);
+			name = WanquBarUITests;
+			productName = WanquBarUITests;
+			productReference = 580C0B991D49F8AE00864F2F /* WanquBarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		580C0B771D49F8AD00864F2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Pang.Xie;
+				TargetAttributes = {
+					580C0B7E1D49F8AE00864F2F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					580C0B8D1D49F8AE00864F2F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 580C0B7E1D49F8AE00864F2F;
+					};
+					580C0B981D49F8AE00864F2F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 580C0B7E1D49F8AE00864F2F;
+					};
+				};
+			};
+			buildConfigurationList = 580C0B7A1D49F8AD00864F2F /* Build configuration list for PBXProject "WanquBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 580C0B761D49F8AD00864F2F;
+			productRefGroup = 580C0B801D49F8AE00864F2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				580C0B7E1D49F8AE00864F2F /* WanquBar */,
+				580C0B8D1D49F8AE00864F2F /* WanquBarTests */,
+				580C0B981D49F8AE00864F2F /* WanquBarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		580C0B7D1D49F8AE00864F2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				580C0B851D49F8AE00864F2F /* Assets.xcassets in Resources */,
+				580C0BAE1D4A080900864F2F /* WanquViewController.xib in Resources */,
+				580C0B881D49F8AE00864F2F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		580C0B8C1D49F8AE00864F2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		580C0B971D49F8AE00864F2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		580C0B7B1D49F8AE00864F2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				580C0B831D49F8AE00864F2F /* AppDelegate.swift in Sources */,
+				580C0BAD1D4A080900864F2F /* WanquViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		580C0B8A1D49F8AE00864F2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				580C0B931D49F8AE00864F2F /* WanquBarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		580C0B951D49F8AE00864F2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				580C0B9E1D49F8AE00864F2F /* WanquBarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		580C0B901D49F8AE00864F2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 580C0B7E1D49F8AE00864F2F /* WanquBar */;
+			targetProxy = 580C0B8F1D49F8AE00864F2F /* PBXContainerItemProxy */;
+		};
+		580C0B9B1D49F8AE00864F2F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 580C0B7E1D49F8AE00864F2F /* WanquBar */;
+			targetProxy = 580C0B9A1D49F8AE00864F2F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		580C0B861D49F8AE00864F2F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				580C0B871D49F8AE00864F2F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		580C0BA01D49F8AE00864F2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		580C0BA11D49F8AE00864F2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		580C0BA31D49F8AE00864F2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = WanquBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pangxie.WanquBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		580C0BA41D49F8AE00864F2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = WanquBar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pangxie.WanquBar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		580C0BA61D49F8AE00864F2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = WanquBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pangxie.WanquBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WanquBar.app/Contents/MacOS/WanquBar";
+			};
+			name = Debug;
+		};
+		580C0BA71D49F8AE00864F2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = WanquBarTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pangxie.WanquBarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WanquBar.app/Contents/MacOS/WanquBar";
+			};
+			name = Release;
+		};
+		580C0BA91D49F8AE00864F2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = WanquBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pangxie.WanquBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WanquBar;
+			};
+			name = Debug;
+		};
+		580C0BAA1D49F8AE00864F2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = WanquBarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pangxie.WanquBarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = WanquBar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		580C0B7A1D49F8AD00864F2F /* Build configuration list for PBXProject "WanquBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				580C0BA01D49F8AE00864F2F /* Debug */,
+				580C0BA11D49F8AE00864F2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		580C0BA21D49F8AE00864F2F /* Build configuration list for PBXNativeTarget "WanquBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				580C0BA31D49F8AE00864F2F /* Debug */,
+				580C0BA41D49F8AE00864F2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		580C0BA51D49F8AE00864F2F /* Build configuration list for PBXNativeTarget "WanquBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				580C0BA61D49F8AE00864F2F /* Debug */,
+				580C0BA71D49F8AE00864F2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		580C0BA81D49F8AE00864F2F /* Build configuration list for PBXNativeTarget "WanquBarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				580C0BA91D49F8AE00864F2F /* Debug */,
+				580C0BAA1D49F8AE00864F2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 580C0B771D49F8AD00864F2F /* Project object */;
+}
