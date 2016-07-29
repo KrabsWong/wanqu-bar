@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import Alamofire
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -35,6 +36,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func showPopover(sender: AnyObject?) {
         if let button = wanquItem.button {
             wanquPopover.showRelativeToRect(button.bounds, ofView: button, preferredEdge: NSRectEdge.MinY)
+            Alamofire.request(.POST, "http://bigyoo.me/ns/cmd", parameters: ["type": "wanqu", "action": "getLatest"]).responseJSON {
+                response in debugPrint(response)
+            }
         }
     }
     
