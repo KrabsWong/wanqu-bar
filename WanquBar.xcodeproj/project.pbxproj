@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		580C0B831D49F8AE00864F2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0B821D49F8AE00864F2F /* AppDelegate.swift */; };
 		580C0B851D49F8AE00864F2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 580C0B841D49F8AE00864F2F /* Assets.xcassets */; };
 		580C0B881D49F8AE00864F2F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 580C0B861D49F8AE00864F2F /* MainMenu.xib */; };
 		580C0B931D49F8AE00864F2F /* WanquBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0B921D49F8AE00864F2F /* WanquBarTests.swift */; };
 		580C0B9E1D49F8AE00864F2F /* WanquBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0B9D1D49F8AE00864F2F /* WanquBarUITests.swift */; };
-		580C0BAD1D4A080900864F2F /* WanquViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0BAB1D4A080900864F2F /* WanquViewController.swift */; };
-		580C0BAE1D4A080900864F2F /* WanquViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 580C0BAC1D4A080900864F2F /* WanquViewController.xib */; };
 		FC31A8C51D4A49C400ABF575 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC31A8C41D4A49C400ABF575 /* Alamofire.framework */; };
 		FC31A8C61D4A49C400ABF575 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC31A8C41D4A49C400ABF575 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FC31A8C91D4A49E000ABF575 /* Alamofire.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = FC31A8C81D4A49E000ABF575 /* Alamofire.framework.dSYM */; };
+		FC49D6651D4B9EEC00D747FA /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC49D6641D4B9EEC00D747FA /* SwiftyJSON.framework */; };
+		FC49D6661D4B9EEC00D747FA /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC49D6641D4B9EEC00D747FA /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FC49D6681D4B9EFD00D747FA /* SwiftyJSON.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = FC49D6671D4B9EFD00D747FA /* SwiftyJSON.framework.dSYM */; };
+		FC9B1BED1D4B97A8001CB3DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC9B1BEC1D4B97A8001CB3DA /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 			dstSubfolderSpec = 7;
 			files = (
 				FC31A8C91D4A49E000ABF575 /* Alamofire.framework.dSYM in CopyFiles */,
+				FC49D6681D4B9EFD00D747FA /* SwiftyJSON.framework.dSYM in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +55,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				FC49D6661D4B9EEC00D747FA /* SwiftyJSON.framework in Embed Frameworks */,
 				FC31A8C61D4A49C400ABF575 /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -62,7 +65,6 @@
 
 /* Begin PBXFileReference section */
 		580C0B7F1D49F8AE00864F2F /* WanquBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WanquBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		580C0B821D49F8AE00864F2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		580C0B841D49F8AE00864F2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		580C0B871D49F8AE00864F2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		580C0B891D49F8AE00864F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,10 +74,11 @@
 		580C0B991D49F8AE00864F2F /* WanquBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WanquBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		580C0B9D1D49F8AE00864F2F /* WanquBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanquBarUITests.swift; sourceTree = "<group>"; };
 		580C0B9F1D49F8AE00864F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		580C0BAB1D4A080900864F2F /* WanquViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WanquViewController.swift; sourceTree = "<group>"; };
-		580C0BAC1D4A080900864F2F /* WanquViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WanquViewController.xib; sourceTree = "<group>"; };
 		FC31A8C41D4A49C400ABF575 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
 		FC31A8C81D4A49E000ABF575 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/Mac/Alamofire.framework.dSYM; sourceTree = "<group>"; };
+		FC49D6641D4B9EEC00D747FA /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
+		FC49D6671D4B9EFD00D747FA /* SwiftyJSON.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = SwiftyJSON.framework.dSYM; path = Carthage/Build/Mac/SwiftyJSON.framework.dSYM; sourceTree = "<group>"; };
+		FC9B1BEC1D4B97A8001CB3DA /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC49D6651D4B9EEC00D747FA /* SwiftyJSON.framework in Frameworks */,
 				FC31A8C51D4A49C400ABF575 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +111,8 @@
 		580C0B761D49F8AD00864F2F = {
 			isa = PBXGroup;
 			children = (
+				FC49D6671D4B9EFD00D747FA /* SwiftyJSON.framework.dSYM */,
+				FC49D6641D4B9EEC00D747FA /* SwiftyJSON.framework */,
 				FC31A8C81D4A49E000ABF575 /* Alamofire.framework.dSYM */,
 				FC31A8C41D4A49C400ABF575 /* Alamofire.framework */,
 				580C0B811D49F8AE00864F2F /* WanquBar */,
@@ -129,11 +135,9 @@
 		580C0B811D49F8AE00864F2F /* WanquBar */ = {
 			isa = PBXGroup;
 			children = (
-				580C0B821D49F8AE00864F2F /* AppDelegate.swift */,
+				FC9B1BEC1D4B97A8001CB3DA /* AppDelegate.swift */,
 				580C0B841D49F8AE00864F2F /* Assets.xcassets */,
 				580C0B861D49F8AE00864F2F /* MainMenu.xib */,
-				580C0BAB1D4A080900864F2F /* WanquViewController.swift */,
-				580C0BAC1D4A080900864F2F /* WanquViewController.xib */,
 				580C0B891D49F8AE00864F2F /* Info.plist */,
 			);
 			path = WanquBar;
@@ -264,7 +268,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				580C0B851D49F8AE00864F2F /* Assets.xcassets in Resources */,
-				580C0BAE1D4A080900864F2F /* WanquViewController.xib in Resources */,
 				580C0B881D49F8AE00864F2F /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,8 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				580C0B831D49F8AE00864F2F /* AppDelegate.swift in Sources */,
-				580C0BAD1D4A080900864F2F /* WanquViewController.swift in Sources */,
+				FC9B1BED1D4B97A8001CB3DA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
