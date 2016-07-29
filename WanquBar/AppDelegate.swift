@@ -8,51 +8,65 @@
 
 import Cocoa
 import Alamofire
+import SwiftyJSON
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBOutlet weak var wanquMenu: NSMenu!
-    @IBOutlet weak var wanquPopover: NSPopover!
     
     let wanquItem = NSStatusBar.systemStatusBar().statusItemWithLength(NSVariableStatusItemLength)
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
+        
         if let button = wanquItem.button {
             let icon = NSImage(named: "wanquIcon")
             icon?.template = true;
             button.image = icon
-            button.action = #selector(AppDelegate.togglePopover(_:))
         }
         
-        wanquPopover.contentViewController = WanquViewController(nibName: "WanquViewController", bundle: nil)
-    }
-
-    func applicationWillTerminate(aNotification: NSNotification) {
-        // Insert code here to tear down your application
+        Alamofire.request(.POST, "http://bigyoo.me/ns/cmd", parameters: ["type": "wanqu", "action": "getLatest"]).responseJSON {
+            response in
+            
+            let json = JSON(response.result.value!)
+            
+            let titleItem = NSMenuItem(title: "\(json["data"]["title"])", action: nil, keyEquivalent: "")
+            self.wanquMenu.addItem(titleItem)
+            self.wanquMenu.addItem(NSMenuItem.separatorItem())
+            
+            for(_, subJson):(String, JSON) in json["data"]["list"] {
+                print(subJson)
+                let subItem = NSMenuItem(title: "\(subJson["title"])", action: #selector(AppDelegate.openWanquURL(_:)), keyEquivalent: "")
+                subItem.representedObject = "\(subJson["link"])"
+                self.wanquMenu.addItem(subItem)
+            }
+            self.wanquItem.menu = self.wanquMenu
+        }
     }
     
-    func showPopover(sender: AnyObject?) {
-        if let button = wanquItem.button {
-            wanquPopover.showRelativeToRect(button.bounds, ofView: button, preferredEdge: NSRectEdge.MinY)
-            Alamofire.request(.POST, "http://bigyoo.me/ns/cmd", parameters: ["type": "wanqu", "action": "getLatest"]).responseJSON {
-                response in debugPrint(response)
+    func openWanquURL(sender: AnyObject?) {
+        if let url = sender?.representedObject! {
+            if let targetURL = NSURL(string: "\(url)") {
+                NSWorkspace.sharedWorkspace().openURL(targetURL)
             }
         }
     }
     
-    func closePopover(sender: AnyObject?) {
-        wanquPopover.performClose(sender)
-    }
-    
-    func togglePopover(sender: AnyObject?) {
-        if wanquPopover.shown {
-            closePopover(sender)
-        } else {
-            showPopover(sender)
+    func requestWanquArticles(sender: AnyObject?) {
+        NSLog("test")
+        Alamofire.request(.POST, "http://bigyoo.me/ns/cmd", parameters: ["type": "wanqu", "action": "getLatest"]).responseJSON {
+            response in
+            
+            let json = JSON(response.result.value!)
+            print(json["data"]["title"])
         }
     }
+    
+    func applicationWillTerminate(aNotification: NSNotification) {
+        // Insert code here to tear down your application
+    }
+    
 
 }
 
