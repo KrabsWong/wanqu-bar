@@ -61,16 +61,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
     
-    func requestWanquArticles(sender: AnyObject?) {
-        NSLog("test")
-        Alamofire.request(.POST, "http://bigyoo.me/ns/cmd", parameters: ["type": "wanqu", "action": "getLatest"]).responseJSON {
-            response in
-            
-            let json = JSON(response.result.value!)
-            print(json["data"]["title"])
-        }
-    }
-    
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
     }
