@@ -36,9 +36,17 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             self.wanquMenu.addItem(NSMenuItem.separatorItem())
             
             for(_, subJson):(String, JSON) in json["data"]["list"] {
-                print(subJson)
-                let subItem = NSMenuItem(title: "\(subJson["title"])", action: #selector(AppDelegate.openWanquURL(_:)), keyEquivalent: "")
+                var displayTitle = "\(subJson["title"])";
+                let charCount = displayTitle.characters.count
+                
+                if charCount > 20 {
+                    let endRange = displayTitle.endIndex.advancedBy(-(charCount - 20))
+                    displayTitle = "\(displayTitle.substringToIndex(endRange))..."
+                }
+
+                let subItem = NSMenuItem(title: displayTitle, action: #selector(AppDelegate.openWanquURL(_:)), keyEquivalent: "")
                 subItem.representedObject = "\(subJson["link"])"
+                subItem.toolTip = "[\(subJson["title"])] - \(subJson["summary"])"
                 self.wanquMenu.addItem(subItem)
             }
             self.wanquItem.menu = self.wanquMenu
