@@ -11,6 +11,9 @@
 		580C0B881D49F8AE00864F2F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 580C0B861D49F8AE00864F2F /* MainMenu.xib */; };
 		580C0B931D49F8AE00864F2F /* WanquBarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0B921D49F8AE00864F2F /* WanquBarTests.swift */; };
 		580C0B9E1D49F8AE00864F2F /* WanquBarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580C0B9D1D49F8AE00864F2F /* WanquBarUITests.swift */; };
+		FC2194541D4C86BC0021E0E1 /* PromiseKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC2194531D4C86BC0021E0E1 /* PromiseKit.framework */; };
+		FC2194551D4C86BC0021E0E1 /* PromiseKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC2194531D4C86BC0021E0E1 /* PromiseKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FC2194571D4C86CD0021E0E1 /* PromiseKit.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = FC2194561D4C86CD0021E0E1 /* PromiseKit.framework.dSYM */; };
 		FC31A8C51D4A49C400ABF575 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC31A8C41D4A49C400ABF575 /* Alamofire.framework */; };
 		FC31A8C61D4A49C400ABF575 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FC31A8C41D4A49C400ABF575 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		FC31A8C91D4A49E000ABF575 /* Alamofire.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = FC31A8C81D4A49E000ABF575 /* Alamofire.framework.dSYM */; };
@@ -46,6 +49,7 @@
 			files = (
 				FC31A8C91D4A49E000ABF575 /* Alamofire.framework.dSYM in CopyFiles */,
 				FC49D6681D4B9EFD00D747FA /* SwiftyJSON.framework.dSYM in CopyFiles */,
+				FC2194571D4C86CD0021E0E1 /* PromiseKit.framework.dSYM in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +59,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				FC2194551D4C86BC0021E0E1 /* PromiseKit.framework in Embed Frameworks */,
 				FC49D6661D4B9EEC00D747FA /* SwiftyJSON.framework in Embed Frameworks */,
 				FC31A8C61D4A49C400ABF575 /* Alamofire.framework in Embed Frameworks */,
 			);
@@ -74,6 +79,8 @@
 		580C0B991D49F8AE00864F2F /* WanquBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WanquBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		580C0B9D1D49F8AE00864F2F /* WanquBarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WanquBarUITests.swift; sourceTree = "<group>"; };
 		580C0B9F1D49F8AE00864F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC2194531D4C86BC0021E0E1 /* PromiseKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PromiseKit.framework; path = Carthage/Build/Mac/PromiseKit.framework; sourceTree = "<group>"; };
+		FC2194561D4C86CD0021E0E1 /* PromiseKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = PromiseKit.framework.dSYM; path = Carthage/Build/Mac/PromiseKit.framework.dSYM; sourceTree = "<group>"; };
 		FC31A8C41D4A49C400ABF575 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/Mac/Alamofire.framework; sourceTree = "<group>"; };
 		FC31A8C81D4A49E000ABF575 /* Alamofire.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Alamofire.framework.dSYM; path = Carthage/Build/Mac/Alamofire.framework.dSYM; sourceTree = "<group>"; };
 		FC49D6641D4B9EEC00D747FA /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/Mac/SwiftyJSON.framework; sourceTree = "<group>"; };
@@ -86,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC2194541D4C86BC0021E0E1 /* PromiseKit.framework in Frameworks */,
 				FC49D6651D4B9EEC00D747FA /* SwiftyJSON.framework in Frameworks */,
 				FC31A8C51D4A49C400ABF575 /* Alamofire.framework in Frameworks */,
 			);
@@ -111,6 +119,8 @@
 		580C0B761D49F8AD00864F2F = {
 			isa = PBXGroup;
 			children = (
+				FC2194561D4C86CD0021E0E1 /* PromiseKit.framework.dSYM */,
+				FC2194531D4C86BC0021E0E1 /* PromiseKit.framework */,
 				FC49D6671D4B9EFD00D747FA /* SwiftyJSON.framework.dSYM */,
 				FC49D6641D4B9EEC00D747FA /* SwiftyJSON.framework */,
 				FC31A8C81D4A49E000ABF575 /* Alamofire.framework.dSYM */,
