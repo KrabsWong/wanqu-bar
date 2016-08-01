@@ -6,6 +6,7 @@
 //  Copyright © 2016年 Pang.Xie. All rights reserved.
 //
 
+import Foundation
 import Cocoa
 import Alamofire
 import SwiftyJSON
@@ -20,13 +21,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
         // Insert code here to initialize your application
-        
         if let button = wanquItem.button {
             let icon = NSImage(named: "wanquIcon")
             icon?.template = true;
             button.image = icon
         }
         
+        generateMenuItems()
+        NSTimer.scheduledTimerWithTimeInterval(300.0, target: self, selector: #selector(AppDelegate.generateMenuItems), userInfo: nil, repeats: true)
+    }
+    
+    // 生成菜单项
+    func generateMenuItems() {
+        wanquMenu.removeAllItems()
         when(getLatestArticles(), getRandomArticle()).then {latestArticles, randomArticle -> Void in
             let latestArticlesJSON = JSON(latestArticles)
             let randomArticleJSON = JSON(randomArticle)
@@ -35,7 +42,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             let titleItem = NSMenuItem(title: "最新(\(latestArticlesJSON["data"]["title"]))", action: nil, keyEquivalent: "")
             self.wanquMenu.addItem(titleItem)
             self.wanquMenu.addItem(NSMenuItem.separatorItem())
-
             
             for(_, subJson):(String, JSON) in latestArticlesJSON["data"]["list"] {
                 var displayTitle = "\(subJson["title"])";
@@ -74,14 +80,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 self.wanquMenu.addItem(subItem)
             }
             
-            // 添加退出功能
+            // 添加退出功能和github链接
             self.wanquMenu.addItem(NSMenuItem.separatorItem())
             let githubItem = NSMenuItem(title: "Github仓库地址", action: #selector(AppDelegate.openWanquURL(_:)), keyEquivalent: "")
             githubItem.representedObject = "https://github.com/yPangXie/wanqu-bar"
             self.wanquMenu.addItem(githubItem)
             self.wanquMenu.addItem(NSMenuItem(title: "退出", action: #selector(AppDelegate.quit(_:)), keyEquivalent: "Q"))
             self.wanquItem.menu = self.wanquMenu
-
+            
         }
     }
     
