@@ -73,6 +73,13 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 subItem.toolTip = "[\(subJson["title"])] - \(subJson["summary"])"
                 self.wanquMenu.addItem(subItem)
             }
+            
+            // 添加退出功能
+            self.wanquMenu.addItem(NSMenuItem.separatorItem())
+            let githubItem = NSMenuItem(title: "Github仓库地址", action: #selector(AppDelegate.openWanquURL(_:)), keyEquivalent: "")
+            githubItem.representedObject = "https://github.com/yPangXie/wanqu-bar"
+            self.wanquMenu.addItem(githubItem)
+            self.wanquMenu.addItem(NSMenuItem(title: "退出", action: #selector(AppDelegate.quit(_:)), keyEquivalent: "Q"))
             self.wanquItem.menu = self.wanquMenu
 
         }
@@ -119,6 +126,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 NSWorkspace.sharedWorkspace().openURL(targetURL)
             }
         }
+    }
+    
+    // 退出
+    func quit(sender: AnyObject) {
+        NSApplication.sharedApplication().terminate(self)
     }
     
     func applicationWillTerminate(aNotification: NSNotification) {
